@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "prod": "pm2 start index.js --name api.blog.anuragbhatt.me -i 3 --update-env && pm2 save",
+    "prod": "pm2 start index.js --name api.blog.anuragbhatt.me -i 3 --update-env",
     "stop": "pm2 stop api.blog.anuragbhatt.me",
     "restart": "pm2 restart api.blog.anuragbhatt.me",
     "delete": "pm2 delete api.blog.anuragbhatt.me",
