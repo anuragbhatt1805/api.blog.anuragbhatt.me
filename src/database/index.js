@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { createClient } from "redis";
 
 export const connectDB = async () => {
     try {
@@ -8,3 +9,7 @@ export const connectDB = async () => {
         console.error("MONGO:","Database connection failed");
     }
 }
+
+export const redisClient = createClient({
+    url: process.env.REDIS_URI
+});
