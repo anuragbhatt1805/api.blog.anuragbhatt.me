@@ -1,4 +1,4 @@
-import { User } from "../model/User.model.js";
+import { User } from "../model/index.js";
 
 export const generateToken = async (_id) => {
     const user = await User.findById(_id);

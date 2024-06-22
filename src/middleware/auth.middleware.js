@@ -1,5 +1,5 @@
 import { AsyncHandler, ApiError, ApiResponse } from "../util/index.js";
-import { User } from "../models/index.js";
+import { User } from "../model/index.js";
 import jwt from "jsonwebtoken";
 
 export const auth = AsyncHandler(async (req, res, next) => {
