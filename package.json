@@ -7,14 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "prod": "pm2 start index.js --name api.blog.anuragbhatt.me -i 3 --update-env",
-    "stop": "pm2 stop api.blog.anuragbhatt.me",
-    "restart": "pm2 restart api.blog.anuragbhatt.me",
-    "delete": "pm2 delete api.blog.anuragbhatt.me",
-    "logs": "pm2 logs api.blog.anuragbhatt.me",
-    "kill": "pm2 kill api.blog.anuragbhatt.me",
-    "status": "pm2 status"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
