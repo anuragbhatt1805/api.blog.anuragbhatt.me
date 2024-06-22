@@ -1,0 +1,43 @@
+{
+  "name": "api.blog.anuragbhatt.me",
+  "version": "1.0.0",
+  "description": "NodeJs API for blog.anuragbhatt.me",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prod": "pm2 start index.js --name api.blog.anuragbhatt.me -i 3 --update-env && pm2 save",
+    "stop": "pm2 stop api.blog.anuragbhatt.me",
+    "restart": "pm2 restart api.blog.anuragbhatt.me",
+    "delete": "pm2 delete api.blog.anuragbhatt.me",
+    "logs": "pm2 logs api.blog.anuragbhatt.me",
+    "kill": "pm2 kill api.blog.anuragbhatt.me",
+    "status": "pm2 status"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuragbhatt1805/api.blog.anuragbhatt.me.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Anurag Bhatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anuragbhatt1805/api.blog.anuragbhatt.me/issues"
+  },
+  "homepage": "https://github.com/anuragbhatt1805/api.blog.anuragbhatt.me#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3",
+    "pm2": "^5.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
