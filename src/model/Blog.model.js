@@ -43,7 +43,7 @@ export const BlogSchema = new mongoose.Schema({
         type: [CommentSchema],
         default: []
     },
-    createdBy: {
+    author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     }
