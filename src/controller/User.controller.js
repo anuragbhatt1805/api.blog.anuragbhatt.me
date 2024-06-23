@@ -209,7 +209,7 @@ export const GetUserById = AsyncHandler(async (req, res) => {
         };
 
         return res.status(200)
-            .json(new ApiResponse(200, {userData}, "User fetched successfully"));
+            .json(new ApiResponse(200, userData, "User fetched successfully"));
     } catch (error) {
         console.log(error);
         return res.status(500).json(new ApiError(500, "Internal Server Error"));
