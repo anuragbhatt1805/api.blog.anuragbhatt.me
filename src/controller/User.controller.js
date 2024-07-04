@@ -181,7 +181,7 @@ export const DeleteUser = AsyncHandler(async (req, res) => {
 
 export const GetUserById = AsyncHandler(async (req, res) => {
     try {
-        const user = await User.findOne({username: req.params.id}).select("-password -__v -_id -access_token -refresh_token");
+        const user = await User.findOne({username: req.params.id?.toUpperCase()}).select("-password -__v -_id -access_token -refresh_token");
 
         if (!user) {
             return res.status(404).json(new ApiError(404, "User not found"));
